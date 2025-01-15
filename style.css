@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter";
+    padding: 10px 10px 0 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.drop-area {
+    margin: 20px 0;
+    padding: 50px;
+    text-align: center;
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+
+    #fontFile::file-selector-button {
+        font-family: "Inter";
+        color: #fff;
+        background-color: coral;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.drop-area.highlight {
+    border-color: green;
+    background-color: #cfffcf;
+}
+
+.preview-area {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+
+    input {
+        font-family: "Inter";
+        padding: 3px;
+        border: 1px solid #bcbcbc;
+        border-radius: 5px;
+    }
+}
+
+.font-family-name {
+    margin-block: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    cursor: text;
+}
+
+.text-samples {
+    margin-top: 10px;
+    overflow-wrap: break-word;
+}
+
+.font-controlar {
+    display: flex;
+    margin-block: 15px;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #bcbcbc;
+        overflow-wrap: anywhere;
+    }
+
+    div:last-child {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+}
+
+footer {
+    display: grid;
+    place-content: center;
+    margin-top: auto;
+    padding-block: 20px;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+}

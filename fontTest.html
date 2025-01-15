@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Font Tester - Test and Preview Fonts</title>
+    <meta name="description"
+        content="Try our Online Font Tester to preview and adjust fonts. Upload font files and test with customizable options like font size, spacing, and line height.">
+    <meta name="keywords"
+        content="Font Tester, Online Font Preview, Upload Fonts, Font Size Adjustment, Test Fonts Online">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Online Font Tester</h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <div class="drop-area" id="drop-area">
+                <p style="font-size: 20px; font-weight: bold; color: coral; margin-bottom: 10px">Drop your font file!
+                </p>
+                <input type="file" id="fontFile">
+            </div>
+        </section>
+        <section class="preview-section">
+            <div class="preview-area" id="preview-area">
+                <h2>Font Preview:</h2>
+                <div class="font-family-name" id="font-family-name"></div>
+                <div>
+                    <label for="customText">Custom Text:</label>
+                    <input type="text" id="customText" placeholder="Type your text here">
+                </div>
+                <div class="font-controlar">
+                    <div class="font-size-control">
+                        <label for="fontSize">Font Size:</label>
+                        <input type="range" id="fontSize" min="1" max="100" value="18">
+                        <span class="current-size" id="currentFontSize">18px</span>
+                    </div>
+                    <div class="line-height-control">
+                        <label for="lineHeight">Line Height:</label>
+                        <input type="number" id="lineHeight" min="0.1" max="10" step="0.1" value="1.17">
+                        <span class="current-height" id="currentLineHeight">1.17em</span>
+                    </div>
+                    <div class="letter-spacing-control">
+                        <label for="letterSpacing">Letter Spacing:</label>
+                        <input type="number" id="letterSpacing" min="-20" max="20" step="0.1" value="0">
+                        <span class="current-spacing" id="currentLetterSpacing">0px</span>
+                    </div>
+                </div>
+                <div class="text-samples" id="text-samples"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025 - Font Tester | All Rights Reserved</p>
+    </footer>
+
+    <script src="fontTest.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Online Font Tester",
+          "description": "Upload and test fonts online. Adjust font size, line height, and letter spacing for optimal preview.",
+          "applicationCategory": "DesignTool",
+          "url": "https://github.com/yourusername/font-tester",
+          "operatingSystem": "All",
+          "author": {
+            "@type": "Person",
+            "name": "Ranjan Pal"
+          }
+        }
+    </script>        
+</body>
+
+</html>
